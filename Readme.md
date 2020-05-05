@@ -29,5 +29,5 @@ import randomString from '@smakss/random-string'
 then to use it within your application you can do it just like this:
 
 ```
-randomString(10) // This will generate a random string with length of then
+randomString(10) // This will generate a random string with a length of 10. The output should be something like this: BD@Z8dKf2%
 ```
