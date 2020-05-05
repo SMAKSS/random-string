@@ -1,0 +1,32 @@
+{
+  "name": "@smakss/random-string",
+  "version": "1.0.0",
+  "description": "Generates random dummy string.",
+  "type": "module",
+  "main": "index.cjs",
+  "exports": {
+    "import": "./index.mjs",
+    "require": "./index.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SMAliKSS/random-string.git"
+  },
+  "keywords": [
+    "ES5",
+    "ES6",
+    "npm",
+    "yarn",
+    "dummy",
+    "string",
+    "SMAKSS",
+    "random",
+    "random-string"
+  ],
+  "author": "SMAKSS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SMAliKSS/random-string/issues"
+  },
+  "homepage": "https://github.com/SMAliKSS/random-string#readme"
+}
