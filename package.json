@@ -1,6 +1,6 @@
 {
   "name": "@smakss/random-string",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generates random dummy string.",
   "type": "module",
   "main": "index.cjs",
