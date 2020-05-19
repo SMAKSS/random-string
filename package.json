@@ -1,6 +1,6 @@
 {
   "name": "@smakss/random-string",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generates random dummy string.",
   "type": "module",
   "main": "index.cjs",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SMAliKSS/random-string.git"
+    "url": "git+https://github.com/SMAKSS/random-string.git"
   },
   "keywords": [
     "ES5",
@@ -26,7 +26,7 @@
   "author": "SMAKSS",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SMAliKSS/random-string/issues"
+    "url": "https://github.com/SMAKSS/random-string/issues"
   },
-  "homepage": "https://github.com/SMAliKSS/random-string#readme"
+  "homepage": "https://github.com/SMAKSS/random-string#readme"
 }
