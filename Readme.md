@@ -1,6 +1,6 @@
 # Generate random string
 
-![npm](https://img.shields.io/npm/v/@smakss/random-string) ![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/@smakss/random-string) ![NPM](https://img.shields.io/npm/l/@smakss/random-string) ![npm](https://img.shields.io/npm/dm/@smakss/random-string) ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@smakss/random-string)
+![npm](https://img.shields.io/npm/v/@smakss/random-string) ![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/@smakss/random-string) ![NPM](https://img.shields.io/npm/l/@smakss/random-string) ![npm](https://img.shields.io/npm/dt/@smakss/random-string) ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@smakss/random-string)
 
 This package will generate a random dummy string based on the available set of characters and given the length of the desired string. In case you don't care about uniqueness and don't want to use UUID this one will help you to achieve what you want.
 
