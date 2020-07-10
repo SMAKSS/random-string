@@ -14,13 +14,13 @@ or
 yarn add @smakss/random-string
 ```
 
-to include with `ES5` or common js you can simply do this:
+to include it with common js module you should do this:
 
 ```
 var randomString = require('@smakss/random-string');
 ```
 
-or to include with `ES6` you can simply do this one:
+and to include it with ECMAscript module you can simply do this one:
 
 ```
 import randomString from '@smakss/random-string'
