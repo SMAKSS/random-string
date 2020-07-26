@@ -1,5 +1,6 @@
 'use strict'
-module.exports = function randomString(length) {
+function randomString(length) {
+  if (!length) length = Math.ceil(0.99 * 10 * 2)
   var string = '',
     allowedCharacters =
       'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*'
@@ -10,3 +11,5 @@ module.exports = function randomString(length) {
     )
   return string
 }
+
+module.exports = randomString
