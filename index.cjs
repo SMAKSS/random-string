@@ -1,6 +1,6 @@
 'use strict'
 function randomString(length) {
-  if (!length) length = Math.ceil(0.99 * 10 * 2)
+  if (!length) length = Math.ceil(Math.random() * 10 * 2)
   var string = '',
     allowedCharacters =
       'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*'
