@@ -1,6 +1,6 @@
 {
   "name": "@smakss/random-string",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Generates random dummy string.",
   "type": "module",
   "main": "index.cjs",
@@ -13,14 +13,14 @@
     "url": "git+https://github.com/SMAKSS/random-string.git"
   },
   "keywords": [
-    "ES5",
-    "ES6",
     "npm",
     "yarn",
     "dummy",
     "string",
     "SMAKSS",
     "random",
+    "CommonJS",
+    "EcmaScript",
     "random-string"
   ],
   "author": "SMAKSS",
