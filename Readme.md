@@ -33,3 +33,7 @@ randomString(10) // This will generate a random string with a length of 10. The 
 
 // If the input was empty the length of string will be selected randomly between 1-20
 ```
+
+## Demo
+
+You can check the [working demo](https://runkit.com/smakss/random-string) in runkit.
