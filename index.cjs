@@ -1,9 +1,10 @@
 'use strict';
-function randomString(length) {
+function randomString(
+  length,
+  allowedCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*'
+) {
   if (!length) length = Math.ceil(Math.random() * 10 * 2);
-  var string = '',
-    allowedCharacters =
-      'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
+  var string = '';
   var allowedCharactersLength = allowedCharacters.length;
   for (var i = 0; i < length; i++)
     string += allowedCharacters.charAt(
