@@ -1,6 +1,6 @@
 {
   "name": "@smakss/random-string",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Generates random dummy string.",
   "type": "module",
   "main": "index.cjs",
@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/SMAKSS/random-string/issues"
   },
-  "homepage": "https://github.com/SMAKSS/random-string#readme"
+  "homepage": "https://github.com/SMAKSS/random-string#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
