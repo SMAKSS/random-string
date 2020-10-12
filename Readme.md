@@ -8,7 +8,7 @@ This package will generate a random dummy string based on the available set of c
 
 To install it you can simply do the following command:
 
-```
+```bash
 npm i @smakss/random-string
 or
 yarn add @smakss/random-string
@@ -16,24 +16,37 @@ yarn add @smakss/random-string
 
 to include it with common js module you should do this:
 
-```
+```js
 var randomString = require('@smakss/random-string');
 ```
 
 and to include it with ECMAscript module you can simply do this one:
 
-```
+```js
 import randomString from '@smakss/random-string';
 ```
 
 then to use it within your application you can do it just like this:
 
+```js
+randomString();
+
+// Result: 'epTfoad497&p'
+// If the input params were empty the length of string will be selected randomly between 1-20.
 ```
-randomString(); // If the input params were empty the length of string will be selected randomly between 1-20. So it will generate a string like: 'epTfoad497&p'
 
-randomString(10); // This will generate a random string with a length of 10. The output should be something like this: 'BD@Z8dKf2%'
+```js
+randomString(10); 
 
-randomString(10, 'abCD#@'); // You can provide both length and allowed characters. So the result will be something like this: 'b@@#aDaC##'
+// Result: 'BD@Z8dKf2%'
+// This will generate a random string with a length of 10.
+```
+
+```js
+randomString(10, 'abCD#@'); 
+
+// Result: 'b@@#aDaC##'
+// You can provide both length and allowed characters.
 ```
 
 ## Demo
