@@ -26,27 +26,33 @@ and to include it with ECMAscript module you can simply do this one:
 import randomString from '@smakss/random-string';
 ```
 
+## Examples of usage
+
 then to use it within your application you can do it just like this:
+
+Generate a random string:
 
 ```js
 randomString();
 
 // Result: 'epTfoad497&p'
-// If the input params were empty the length of string will be selected randomly between 1-20.
 ```
+<sub>**NOTE:** If the input params were empty the length of string will be selected randomly between 1-20.<sub>
+
+Generate a random string with a length of 10:
 
 ```js
 randomString(10); 
 
-// Result: 'BD@Z8dKf2%'
-// This will generate a random string with a length of 10.
+// Result: 'BD@Z8dKf2%' 
 ```
+
+You can provide both length and allowed characters:
 
 ```js
 randomString(10, 'abCD#@'); 
 
 // Result: 'b@@#aDaC##'
-// You can provide both length and allowed characters.
 ```
 
 ## Demo
