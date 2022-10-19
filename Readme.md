@@ -17,13 +17,13 @@ yarn add @smakss/random-string
 to include it with common js module you should do this:
 
 ```js
-var randomString = require('@smakss/random-string');
+var randomString = require("@smakss/random-string");
 ```
 
 and to include it with ECMAscript module you can simply do this one:
 
 ```js
-import randomString from '@smakss/random-string';
+import randomString from "@smakss/random-string";
 ```
 
 ## Examples of usage
@@ -37,20 +37,21 @@ randomString();
 
 // Result: 'epTfoad497&p'
 ```
+
 <sub>**NOTE:** If the input params were empty the length of string will be selected randomly between 1-20.<sub>
 
 Generate a random string with a length of 10:
 
 ```js
-randomString(10); 
+randomString(10);
 
-// Result: 'BD@Z8dKf2%' 
+// Result: 'BD@Z8dKf2%'
 ```
 
 You can provide both length and allowed characters:
 
 ```js
-randomString(10, 'abCD#@'); 
+randomString(10, "abCD#@");
 
 // Result: 'b@@#aDaC##'
 ```
@@ -58,3 +59,7 @@ randomString(10, 'abCD#@');
 ## Demo
 
 You can check the [working demo](https://runkit.com/smakss/random-string) in runkit.
+
+or
+
+[![View @smakss/random-string](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/smakss-random-string-xlf6d2?fontsize=14&hidenavigation=1&theme=dark)

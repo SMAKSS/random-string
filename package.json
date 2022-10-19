@@ -1,17 +1,14 @@
 {
-  "name": "@smakss/random-string",
-  "version": "1.2.3",
+  "author": "SMAKSS",
+  "bugs": {
+    "url": "https://github.com/SMAKSS/random-string/issues"
+  },
   "description": "Generates random dummy string with random length.",
-  "type": "module",
-  "main": "index.cjs",
   "exports": {
     "import": "./index.mjs",
     "require": "./index.cjs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SMAKSS/random-string.git"
-  },
+  "homepage": "https://github.com/SMAKSS/random-string#readme",
   "keywords": [
     "npm",
     "yarn",
@@ -23,10 +20,13 @@
     "EcmaScript",
     "random-string"
   ],
-  "author": "SMAKSS",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/SMAKSS/random-string/issues"
+  "main": "index.cjs",
+  "name": "@smakss/random-string",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SMAKSS/random-string.git"
   },
-  "homepage": "https://github.com/SMAKSS/random-string#readme"
+  "type": "module",
+  "version": "1.2.4"
 }
