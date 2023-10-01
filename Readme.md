@@ -4,6 +4,14 @@
 
 This package will generate a random dummy string based on the available set of characters or provided ones, you can also indicate the length of your desired random string. In case you don't care about uniqueness and don't want to use UUID this one will help you to achieve what you want.
 
+## Demo
+
+You can check the [working demo](https://runkit.com/smakss/random-string) in runkit.
+
+or
+
+[![View @smakss/random-string](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/smakss-random-string-xlf6d2?fontsize=14&hidenavigation=1&theme=dark)
+
 ## How it works?
 
 To install it you can simply do the following command:
@@ -56,10 +64,10 @@ randomString(10, "abCD#@");
 // Result: 'b@@#aDaC##'
 ```
 
-## Demo
+## Contributing
 
-You can check the [working demo](https://runkit.com/smakss/random-string) in runkit.
+Interested in making contributions to this project? Please see [CONTRIBUTING.md](https://github.com/SMAKSS/random-string/blob/master/.github/CONTRIBUTING.md) for guidelines and details.
 
-or
+## Code of Conduct
 
-[![View @smakss/random-string](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/smakss-random-string-xlf6d2?fontsize=14&hidenavigation=1&theme=dark)
+We value and prioritize the well-being of all our contributors and users. To ensure that this project remains a welcoming space for everyone, please refer to our [Code of Conduct](https://github.com/SMAKSS/random-string/blob/master/.github/CODE_OF_CONDUCT.md).
