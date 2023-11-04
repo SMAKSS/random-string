@@ -1,8 +1,8 @@
 # Generate random string
 
-![npm](https://img.shields.io/npm/v/@smakss/random-string) ![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/@smakss/random-string) ![NPM](https://img.shields.io/npm/l/@smakss/random-string) ![npm](https://img.shields.io/npm/dt/@smakss/random-string) ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@smakss/random-string)
+![npm](https://img.shields.io/npm/v/@smakss/random-string) ![NPM](https://img.shields.io/npm/l/@smakss/random-string) ![npm](https://img.shields.io/npm/dt/@smakss/random-string) ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@smakss/random-string)
 
-This package will generate a random dummy string based on the available set of characters or provided ones, you can also indicate the length of your desired random string. In case you don't care about uniqueness and don't want to use UUID this one will help you to achieve what you want.
+This package will generate a random dummy string based on the available set of characters or provided ones, and you can also indicate the length of your desired random string. In case you don't care about uniqueness and don't want to use UUID, this package will help you to achieve what you want.
 
 ## Demo
 
@@ -22,52 +22,52 @@ or
 yarn add @smakss/random-string
 ```
 
-to include it with common js module you should do this:
+To include it with a common js module you should do this:
 
 ```js
-var randomString = require("@smakss/random-string");
+const randomString = require('@smakss/random-string').default;
 ```
 
-and to include it with ECMAscript module you can simply do this one:
+And to include it with an ECMAScript module you can simply do this one:
 
 ```js
-import randomString from "@smakss/random-string";
+import randomString from '@smakss/random-string';
 ```
 
 ## Examples of usage
 
-then to use it within your application you can do it just like this:
+Then to use it within your application you can do it just like this:
 
-Generate a random string:
+Generate a random string with default parameters:
 
 ```js
 randomString();
 
-// Result: 'epTfoad497&p'
+// Result example: 'GkL9#z$P!2'
 ```
 
-<sub>**NOTE:** If the input params were empty the length of string will be selected randomly between 1-20.<sub>
+**NOTE:** If the `length` is not provided, it will be selected randomly between 1 and 20.
 
-Generate a random string with a length of 10:
+Generate a random string with a specified length:
 
 ```js
-randomString(10);
+randomString({ length: 10 });
 
-// Result: 'BD@Z8dKf2%'
+// Result example: 'Sg67&ZpQ8!'
 ```
 
 You can provide both length and allowed characters:
 
 ```js
-randomString(10, "abCD#@");
+randomString({ length: 10, allowedCharacters: 'abCD#@' });
 
-// Result: 'b@@#aDaC##'
+// Result example: 'b@@#aDaC##'
 ```
 
 ## Contributing
 
-Interested in making contributions to this project? Please see [CONTRIBUTING.md](https://github.com/SMAKSS/random-string/blob/master/.github/CONTRIBUTING.md) for guidelines and details.
+Interested in making contributions to this project? Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines and details.
 
 ## Code of Conduct
 
-We value and prioritize the well-being of all our contributors and users. To ensure that this project remains a welcoming space for everyone, please refer to our [Code of Conduct](https://github.com/SMAKSS/random-string/blob/master/.github/CODE_OF_CONDUCT.md).
+We value and prioritize the well-being of all our contributors and users. To ensure that this project remains a welcoming space for everyone, please refer to our [Code of Conduct](./CODE_OF_CONDUCT.md).
