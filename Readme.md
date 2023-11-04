@@ -27,7 +27,7 @@ yarn add @smakss/random-string
 To include it with a common js module you should do this:
 
 ```js
-const randomString = require('@smakss/random-string').default;
+const randomString = require('@smakss/random-string');
 ```
 
 And to include it with an ECMAScript module you can simply do this one:
