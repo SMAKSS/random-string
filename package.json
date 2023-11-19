@@ -3,7 +3,7 @@
   "bugs": {
     "url": "https://github.com/SMAKSS/random-string/issues"
   },
-  "description": "Generates random dummy string with random length.",
+  "description": "Effortlessly generate customizable random strings with @smakss/random-string. Ideal for creating dummy strings, custom-length passwords, or unique identifiers. Integrates seamlessly with both CommonJS and ECMAScript modules.",
   "devDependencies": {
     "@commitlint/cli": "^18.2.0",
     "@commitlint/config-conventional": "^18.1.0",
@@ -27,9 +27,32 @@
     "import": "./dist/esm/index.js",
     "require": "./dist/cjs/index.js"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/SMAKSS/random-string#readme",
-  "keywords": ["npm", "yarn", "dummy", "string", "SMAKSS", "random", "CommonJS", "EcmaScript", "Typescript", "random-string"],
+  "keywords": [
+    "random-string",
+    "password-generator",
+    "string-generator",
+    "npm",
+    "yarn",
+    "typescript",
+    "ecmascript",
+    "random-string-utility",
+    "SMAKSS",
+    "custom-string",
+    "string-utility",
+    "secure-string",
+    "random-passwords",
+    "dummy-data",
+    "dummy-string",
+    "random-characters",
+    "string-creation",
+    "custom-passwords",
+    "javascript-utility",
+    "nodejs"
+  ],
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -50,5 +73,5 @@
   },
   "type": "module",
   "types": "lib",
-  "version": "2.0.0"
+  "version": "2.0.1"
 }
