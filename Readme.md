@@ -20,18 +20,18 @@ or
 
 ## How it works?
 
-To install it you can simply do the following command:
+Install the package using npm or pnpm:
 
 ```bash
-npm i @smakss/random-string
-or
-yarn add @smakss/random-string
+npm install @smakss/random-string
+# or
+pnpm add @smakss/random-string
 ```
 
 To include it with a common js module you should do this:
 
 ```js
-const randomString = require('@smakss/random-string');
+const { default: randomString } = require('@smakss/random-string');
 ```
 
 And to include it with an ECMAScript module you can simply do this one:
@@ -77,3 +77,18 @@ Interested in making contributions to this project? Please see [CONTRIBUTING.md]
 ## Code of Conduct
 
 We value and prioritize the well-being of all our contributors and users. To ensure that this project remains a welcoming space for everyone, please refer to our [Code of Conduct](./CODE_OF_CONDUCT.md).
+
+## Local playground
+
+This repository includes a Vite playground linked to the package through the pnpm workspace. Try the current local build without publishing a package version:
+
+```sh
+pnpm install
+pnpm run dev:playground
+```
+
+To build the playground app, run this from the package root:
+
+~~~sh
+pnpm run build:playground
+~~~
