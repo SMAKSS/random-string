@@ -4,6 +4,10 @@
 
 This package will generate a random dummy string based on the available set of characters or provided ones, and you can also indicate the length of your desired random string. In case you don't care about uniqueness and don't want to use UUID, this package will help you to achieve what you want.
 
+Generated characters and the default length use the Web Crypto API. The function throws if secure randomness is unavailable rather than falling back to `Math.random()`.
+
+Node.js 20 or later is required. In browsers, the Web Crypto API must be available.
+
 If you're in need of a UUID generation library, take a look at [@smakss/uuid](https://www.npmjs.com/package/@smakss/uuid), which offers robust UUID creation capabilities. For those who require more tailored options, [@smakss/password-generator](https://www.npmjs.com/package/@smakss/password-generator) provides a versatile solution for crafting custom passwords to fit a variety of needs.
 
 ## Demo
