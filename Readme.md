@@ -12,10 +12,6 @@ If you're in need of a UUID generation library, take a look at [@smakss/uuid](ht
 
 ## Demo
 
-You can check the [working demo](https://runkit.com/smakss/random-string) in runkit.
-
-or
-
 [![View @smakss/random-string](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/smakss-random-string-xlf6d2?fontsize=14&hidenavigation=1&theme=dark)
 
 ## How it works?
