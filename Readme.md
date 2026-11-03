@@ -1,8 +1,12 @@
 # Generate random string
 
-![npm](https://img.shields.io/npm/v/@smakss/random-string) ![NPM](https://img.shields.io/npm/l/@smakss/random-string) ![npm](https://img.shields.io/npm/dt/@smakss/random-string) ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@smakss/random-string)
+![npm](https://img.shields.io/npm/v/@smakss/random-string) ![NPM](https://img.shields.io/npm/l/@smakss/random-string) ![npm](https://img.shields.io/npm/dt/@smakss/random-string) ![npm unpacked size](https://img.shields.io/npm/unpacked-size/%40smakss%2Frandom-string)
 
 This package will generate a random dummy string based on the available set of characters or provided ones, and you can also indicate the length of your desired random string. In case you don't care about uniqueness and don't want to use UUID, this package will help you to achieve what you want.
+
+Generated characters and the default length use the Web Crypto API. The function throws if secure randomness is unavailable rather than falling back to `Math.random()`.
+
+Node.js 20 or later is required. In browsers, the Web Crypto API must be available.
 
 If you're in need of a UUID generation library, take a look at [@smakss/uuid](https://www.npmjs.com/package/@smakss/uuid), which offers robust UUID creation capabilities. For those who require more tailored options, [@smakss/password-generator](https://www.npmjs.com/package/@smakss/password-generator) provides a versatile solution for crafting custom passwords to fit a variety of needs.
 
@@ -16,18 +20,18 @@ or
 
 ## How it works?
 
-To install it you can simply do the following command:
+Install the package using npm or pnpm:
 
 ```bash
-npm i @smakss/random-string
-or
-yarn add @smakss/random-string
+npm install @smakss/random-string
+# or
+pnpm add @smakss/random-string
 ```
 
 To include it with a common js module you should do this:
 
 ```js
-const randomString = require('@smakss/random-string');
+const { default: randomString } = require('@smakss/random-string');
 ```
 
 And to include it with an ECMAScript module you can simply do this one:
@@ -73,3 +77,18 @@ Interested in making contributions to this project? Please see [CONTRIBUTING.md]
 ## Code of Conduct
 
 We value and prioritize the well-being of all our contributors and users. To ensure that this project remains a welcoming space for everyone, please refer to our [Code of Conduct](./CODE_OF_CONDUCT.md).
+
+## Local playground
+
+This repository includes a Vite playground linked to the package through the pnpm workspace. Try the current local build without publishing a package version:
+
+```sh
+pnpm install
+pnpm run dev:playground
+```
+
+To build the playground app, run this from the package root:
+
+```sh
+pnpm run build:playground
+```

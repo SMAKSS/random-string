@@ -2,10 +2,39 @@ const DEFAULT_ALLOWED_CHARACTERS =
   'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
 
 /**
+ * Returns an unbiased random index using the Web Crypto API.
+ *
+ * @param max - The exclusive upper bound for the random index.
+ * @returns A secure random integer from 0 to max - 1.
+ */
+function getSecureRandomIndex(max: number): number {
+  if (!Number.isSafeInteger(max) || max < 1 || max > 0x1_0000_0000) {
+    throw new RangeError(
+      'max must be a positive safe integer no greater than 2^32.'
+    );
+  }
+
+  const cryptoProvider = globalThis.crypto;
+  if (!cryptoProvider?.getRandomValues) {
+    throw new Error('Secure randomness is unavailable in this environment.');
+  }
+
+  const range = 0x1_0000_0000;
+  const limit = range - (range % max);
+  const randomValue = new Uint32Array(1);
+
+  do {
+    cryptoProvider.getRandomValues(randomValue);
+  } while (randomValue[0] >= limit);
+
+  return randomValue[0] % max;
+}
+
+/**
  * Generates a random string based on the given length and set of allowed characters.
  *
  * @param {Object} [options={}] - The options for generating the random string.
- * @param {number} [options.length=Math.ceil(Math.random() * 20)] - The length of the string to generate.
+ * @param {number} [options.length] - The length of the string to generate. Defaults to a secure random value from 1 to 20.
  * @param {string} [options.allowedCharacters=DEFAULT_ALLOWED_CHARACTERS] - A string of allowed characters.
  * @returns {string} The generated random string.
  *
@@ -26,17 +55,28 @@ const DEFAULT_ALLOWED_CHARACTERS =
  * console.log(randomStrCustom); // Output will be a random string of exactly 5 characters, with characters only from 'abc123'.
  */
 function randomString({
-  length = Math.ceil(Math.random() * 20),
+  length = getSecureRandomIndex(20) + 1,
   allowedCharacters = DEFAULT_ALLOWED_CHARACTERS
 }: {
   length?: number;
   allowedCharacters?: string;
 } = {}): string {
-  const charactersLength = allowedCharacters.length;
+  if (!Number.isSafeInteger(length) || length < 0) {
+    throw new RangeError('length must be a non-negative safe integer.');
+  }
+
+  if (typeof allowedCharacters !== 'string') {
+    throw new TypeError('allowedCharacters must be a string.');
+  }
+
+  const characters = Array.from(allowedCharacters);
+  if (length > 0 && characters.length === 0) {
+    throw new RangeError('allowedCharacters must not be empty.');
+  }
 
   return Array.from(
     { length },
-    () => allowedCharacters[Math.floor(Math.random() * charactersLength)]
+    () => characters[getSecureRandomIndex(characters.length)]
   ).join('');
 }
 
